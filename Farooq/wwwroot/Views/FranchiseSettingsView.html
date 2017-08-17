@@ -1,0 +1,97 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+<link rel="stylesheet" href="/Content/CSS/Main.css" />
+
+<template>
+    <template is="dom-bind">
+        <b><a href="/Farooq/MainPage"><< Back to Start</a></b>
+        <div class="BoldText"><h3>Settings: {{model.Name$}}</h3></div> 
+        <div class="BoldText"><h4>Edit Franchise Settings</h4></div>
+        <fieldset>
+            <div>
+                <label class="FranchiseLabels">Name:</label>
+                <input class="InputboxFranchiseSettings" value="{{model.Name$::input}}" />
+            </div>
+            <div>
+                <label class="FranchiseLabels">Street:</label>
+                <input class="InputboxFranchiseSettings" value="{{model.Street$::input}}" />
+            </div>
+            <div>
+                <label class="FranchiseLabels">Number:</label>
+                <input class="InputboxFranchiseSettings" value="{{model.Number$::input}}" />
+            </div>
+            <div>
+                <label class="FranchiseLabels">Zip Code:</label>
+                <input class="InputboxFranchiseSettings" value="{{model.ZipCode$::input}}" />
+            </div>
+            <div>
+                <label class="FranchiseLabels">City:</label>
+                <input class="InputboxFranchiseSettings" value="{{model.City$::input}}" />
+            </div>
+            <div>
+                <label class="FranchiseLabels">Country:</label>
+                <input class="InputboxFranchiseSettings" value="{{model.Country$::input}}" />
+            </div>
+            <div>
+                <label class="FranchiseLabels">Address:</label><span>{{model.FullAddress}}</span>
+            </div>
+        </fieldset>
+        <label class="FranchiseLabels"></label> <button value="{{model.SaveFranchiseSettings$::click}}" onmousedown="++this.value">Save</button>
+        <fieldset>
+            <div><h4>Register New Home of Sale</h4></div>
+            <div class="BoldText" style="font-size: 14px;">Home Info</div>
+            <div>
+                <label class="FranchiseLabels">Street:</label>
+                <input class="InputboxFranchiseSettings" value="{{model.HomeStreet$::change}}" />
+            </div>
+            <div>
+                <label class="FranchiseLabels">Number:</label>
+                <input class="InputboxFranchiseSettings" value="{{model.HomeNumber$::change}}" />
+            </div>
+            <div>
+                <label class="FranchiseLabels">Zip Code:</label>
+                <input class="InputboxFranchiseSettings" value="{{model.HomeZipCode$::change}}" />
+            </div>
+            <div>
+                <label class="FranchiseLabels">City:</label>
+                <input class="InputboxFranchiseSettings" value="{{model.HomeCity$::change}}" />
+            </div>
+            <div>
+                <label class="FranchiseLabels">Country:</label>
+                <input class="InputboxFranchiseSettings" value="{{model.HomeCountry$::change}}" />
+            </div>
+            <div>
+                <label class="FranchiseLabels">Address:</label> <span>{{model.HomeFullAddress}}</span>
+            </div>
+        </fieldset>
+        <fieldset>
+            <b>Transaction Info</b>
+            <div>
+                <label class="TransactionsLabels">Date (format: "2016-04-01"):</label>
+                <input id="txtDate" class="InputboxFranchiseSettings"  value="{{model.Date$::input}}" />
+            </div>
+            <div>
+                <label class="TransactionsLabels">Sales Price:</label>
+                <input class="InputboxFranchiseSettings" value="{{model.SalesPrice$::input}}" />
+            </div>
+            <div>
+                <label class="TransactionsLabels">Commission:</label>
+                <input class="InputboxFranchiseSettings" value="{{model.Commission$::input}}" />
+            </div>
+        </fieldset>
+        <button value="{{model.RegisterTransaction$::click}}" onmousedown="++this.value">Register</button>
+        <fieldset>
+            <h4>List of Transactions</h4>
+            <div class="FranchiseListHeaders">
+                <span class="ListHeaders">Date</span>
+                <span class="ListHeaders">Sales Price</span>
+                <span class="ListHeaders">Commission</span>
+                <span class="ListHeaders">Address</span>
+</div>
+        </fieldset>
+        <template is="dom-repeat" items="{{model.TransactionsList}}">
+            <div>
+                <starcounter-include partial="{{item}}"></starcounter-include>
+            </div>
+        </template>
+    </template>
+</template>

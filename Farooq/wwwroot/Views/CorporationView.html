@@ -1,0 +1,43 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+<template>
+    <template is="dom-bind">
+        <div class="FranchiseOfficeMainDiv">
+        <div>
+            <h4 class="BoldText">{{model.Name}}</h4>
+        </div>
+        
+        <div>
+            <h6 class="BoldText">Franchise Offices</h6>
+        </div>
+        
+        <div class="BoldText">Sort On</div>
+        <div>
+            <button class="SortOnButton1" value="{{model.SortOnNumber$::click}}" onmousedown="++this.value">Number of Homes</button>
+            <button class="SortOnButtons" value="{{model.SortOnCommission$::click}}" onmousedown="++this.value">Total Commission</button>
+            <button class="SortOnButtons" value="{{model.SortOnAvgCommission$::click}}" onmousedown="++this.value">Average Commission</button>
+            <button class="SortOnButtons" value="{{model.SortOnTrend$::click}}" onmousedown="++this.value">Positive Trend</button>
+        </div>
+        <div class="FranchiseListHeaders">
+            <span class="ListHeaders">Name</span>
+            <span class="ListHeaders">Number of Homes Sold</span>
+                <span class="ListHeaders">Total Commission</span>
+                <span class="ListHeaders">Average Commission</span>
+                <span class="ListHeaders">Trend</span>
+            </div>
+    </div>
+    <template is="dom-repeat" items="{{model.FranchiseList}}">
+        <div>
+            <starcounter-include partial="{{item}}"></starcounter-include>
+        </div>
+    </template>
+        <div class="FranchiseOfficeMainDiv">
+            <div><h4>New Franchise Office</h4></div>
+            <div>
+                <label>Name:</label>
+                <input class="InputboxSettings" value="{{model.FranchiseName$::input}}" />
+            </div>
+            <button style="margin-bottom: 20px;" value="{{model.AddNewFranchise$::click}}" onmousedown="++this.value">Create New</button>
+        </div>
+    </template>
+</template>

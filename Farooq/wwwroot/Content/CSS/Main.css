@@ -1,0 +1,42 @@
+﻿.InputboxSettings{
+    margin: 10px 0px 10px 0px;
+    width: 200px;
+    height: 22px;
+}
+.CorporationList{
+    border: solid;
+}
+.FranchiseOfficeMainDiv{
+    margin: 10px;
+}
+.BoldText{
+    font-weight: bold;
+}
+.SortOnSettings{
+    margin: 10px 10px 10px 0px;
+}
+.SortOnButtons{
+    margin: 10px;
+}
+.SortOnButton1{
+    margin: 10px 10px 10px 0px;
+}
+.FranchiseListHeaders{
+    font-size: 14px;
+    font-weight: bold;
+}
+.ListHeaders{
+    width: 15%;
+    display: inline-block;
+}
+.FranchiseLabels{
+    width: 10%;
+}
+.InputboxFranchiseSettings{
+    margin: 0px 0px 10px 0px;
+    width: 200px;
+    height: 22px;
+}
+.TransactionsLabels{
+    width: 15%;
+}

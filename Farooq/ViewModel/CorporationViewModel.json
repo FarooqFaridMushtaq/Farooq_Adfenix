@@ -1,0 +1,12 @@
+{
+  "Html": "/Views/CorporationView.html",
+  "Name": "",
+  "SortOnNumber$": 0,
+  "SortOnCommission$": 0,
+  "SortOnAvgCommission$": 0,
+  "SortOnTrend$": 0,
+  "FranchiseList": [ { } ],
+  "FranchiseName$": "",
+  "AddNewFranchise$": 0
+
+}

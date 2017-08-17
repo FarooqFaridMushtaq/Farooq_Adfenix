@@ -1,0 +1,14 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+<link rel="stylesheet" href="/Content/CSS/Main.css" />
+
+<template>
+    <template is="dom-bind">
+        <div class="FranchiseOfficeMainDiv">
+            <span class="ListHeaders"><label><a href="/Farooq/FranchiseInfo/{{model.DetailID}}">{{model.Name}}</a></label></span>
+            <span class="ListHeaders"><label>{{model.TotalSoldHomes}}</label></span>
+            <span class="ListHeaders"><label>{{model.TotalCommission}}</label></span>
+            <span class="ListHeaders"><label>{{model.AverageCommission}}</label></span>
+            <span class="ListHeaders"><label>{{model.Trend}}</label></span>
+        </div>
+    </template>
+</template>

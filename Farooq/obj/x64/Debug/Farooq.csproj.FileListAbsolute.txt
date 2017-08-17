@@ -1,0 +1,4 @@
+F:\Farooq\Adfenix\Farooq\Farooq\bin\Debug\Farooq.exe
+F:\Farooq\Adfenix\Farooq\Farooq\bin\Debug\Farooq.pdb
+F:\Farooq\Adfenix\Farooq\Farooq\obj\x64\Debug\Farooq.exe
+F:\Farooq\Adfenix\Farooq\Farooq\obj\x64\Debug\Farooq.pdb

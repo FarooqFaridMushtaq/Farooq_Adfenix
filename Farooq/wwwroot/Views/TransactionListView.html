@@ -1,0 +1,17 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+<script type="text/javascript" src="/Content/JS/FBShare.js"></script>
+
+<template>
+    <template is="dom-bind">
+        <div class="FranchiseOfficeMainDiv">
+            <span class="ListHeaders"><label>{{model.Date}}</a></label></span>
+            <span class="ListHeaders"><label>{{model.Price}}</label></span>
+            <span class="ListHeaders"><label>{{model.Commission}}</label></span>
+            <span class="ListHeaders" style="width: 25%"><label>{{model.HomeFullAddress}}</label></span>
+            <span class="ListHeaders"><a id="shareBtn" style="margin-left: 10px;" href="" title="{{model.HomeFullAddress}}" onclick="shareSoldHome(this.title)">Share</a></span>
+        </div>
+    </template>
+</template>
+
+
+
